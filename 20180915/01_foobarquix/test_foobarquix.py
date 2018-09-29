@@ -18,7 +18,6 @@ def test_no_match(number, expected):
     assert expected == foobarquix(number)
 
 
-@pytest.mark.skip()
 @pytest.mark.parametrize(
     'number, expected', [
         (6, 'Foo'),
@@ -30,7 +29,6 @@ def test_is_divisible_only_by_three_or_five_or_seven(number, expected):
     assert expected == foobarquix(number)
 
 
-@pytest.mark.skip()
 @pytest.mark.parametrize(
     'number, expected', [
         (13, 'Foo'),
@@ -42,7 +40,6 @@ def test_only_contains_once_three_or_five_or_seven(number, expected):
     assert expected == foobarquix(number)
 
 
-@pytest.mark.skip()
 @pytest.mark.parametrize(
     'number, expected', [
         (3, 'FooFoo'),
@@ -54,7 +51,6 @@ def test_only_divisible_once_by_a_number_and_contain_it(number, expected):
     assert expected == foobarquix(number)
 
 
-@pytest.mark.skip()
 @pytest.mark.parametrize(
     'number, expected', [
         (33, 'FooFooFoo'),
