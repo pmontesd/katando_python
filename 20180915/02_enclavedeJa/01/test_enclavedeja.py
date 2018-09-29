@@ -17,7 +17,6 @@ def test_no_discount(seasons, expected):
     assert expected == get_price(seasons)
 
 
-@pytest.mark.skip()
 @pytest.mark.parametrize(
     'seasons, expected', [
         ([0, 1, 2], 5*3*.9),
@@ -28,7 +27,6 @@ def test_10_percent_discount(seasons, expected):
     assert expected == get_price(seasons)
 
 
-@pytest.mark.skip()
 @pytest.mark.parametrize(
     'seasons, expected', [
         ([0, 1, 2, 3, 4], 5*5*.8),
